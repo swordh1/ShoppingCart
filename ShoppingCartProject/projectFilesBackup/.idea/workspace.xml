@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f41a8295-a656-4f58-91b7-27a44e144f1a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="ProjectId" id="1YqtyAqHB7pc6pQXmb2Uw9osoLW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="external.system.task.project.file.to.start" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Gradle.C:/Users/Gaming/Desktop/kotlin-shoppingCart-master">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java />
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/Gaming/Desktop/kotlin-shoppingCart-master" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="C:/Users/Gaming/Desktop/kotlin-shoppingCart-master/build.gradle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/build.gradle" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="C:/Users/Gaming/Desktop/kotlin-shoppingCart-master/settings.gradle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/settings.gradle" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.C:/Users/Gaming/Desktop/kotlin-shoppingCart-master" />
+      <item itemvalue="Gradle.C:/Users/Gaming/Desktop/kotlin-shoppingCart-master/settings.gradle" />
+      <item itemvalue="Gradle.C:/Users/Gaming/Desktop/kotlin-shoppingCart-master/build.gradle" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.C:/Users/Gaming/Desktop/kotlin-shoppingCart-master/settings.gradle" />
+        <item itemvalue="Gradle.C:/Users/Gaming/Desktop/kotlin-shoppingCart-master/build.gradle" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f41a8295-a656-4f58-91b7-27a44e144f1a" name="Default Changelist" comment="" />
+      <created>1583682203190</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583682203190</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="764" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583683001848">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="764" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1546.829@0.0.1920.1040" timestamp="1583683001848" />
+    <state x="1090" y="280" key="FileChooserDialogImpl" timestamp="1583683001317">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1090" y="280" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1546.829@0.0.1920.1040" timestamp="1583683001317" />
+    <state width="833" height="398" key="GridCell.Tab.0.bottom" timestamp="1583684074252">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="833" height="398" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1546.829@0.0.1920.1040" timestamp="1583684074252" />
+    <state width="833" height="398" key="GridCell.Tab.0.center" timestamp="1583684074251">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="833" height="398" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1546.829@0.0.1920.1040" timestamp="1583684074251" />
+    <state width="833" height="398" key="GridCell.Tab.0.left" timestamp="1583684074251">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="833" height="398" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1546.829@0.0.1920.1040" timestamp="1583684074251" />
+    <state width="833" height="398" key="GridCell.Tab.0.right" timestamp="1583684074252">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="833" height="398" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1546.829@0.0.1920.1040" timestamp="1583684074252" />
+    <state x="750" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1583683698109">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="750" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1546.829@0.0.1920.1040" timestamp="1583683698109" />
+  </component>
+</project>
