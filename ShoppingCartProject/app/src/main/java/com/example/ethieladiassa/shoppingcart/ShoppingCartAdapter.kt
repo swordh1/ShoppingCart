@@ -11,6 +11,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_shopping_cart.*
+import kotlinx.android.synthetic.main.cart_list_item.*
 import kotlinx.android.synthetic.main.cart_list_item.view.*
 import kotlinx.android.synthetic.main.cart_list_item.view.product_image
 import kotlinx.android.synthetic.main.cart_list_item.view.product_name
@@ -37,19 +39,36 @@ class ShoppingCartAdapter(var context: Context, var cartItems: List<CartItem>) :
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         fun bindItem(cartItem: CartItem) {
+            // Displaying the image in the image view by decoding the Base64 to Bitmap
             val imageBytes = Base64.decode(cartItem.product.photos[0].filename, Base64.DEFAULT)
             val decodedImage = BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.size)
             itemView.product_image.setImageBitmap(decodedImage)
+
+            // Recycling through adding or removing items from the shopping cart
             itemView.addToCart2.setOnClickListener { view ->
                 ShoppingCart.addItem(CartItem(cartItem.product))
-                var value = cartItem.quantity
-                itemView.product_quantity.text = value.toString()
-                Toast.makeText(itemView.context, "quantity added", Toast.LENGTH_SHORT).show()
+                var value1 = ++cartItem.quantity
+                itemView.product_quantity.text = value1.toString()
+                Toast.makeText(itemView.context, "1 more Quantity added", Toast.LENGTH_SHORT).show()
+
+                var totalPrice = ShoppingCart.getCart()
+                    .fold(0.toDouble()) { acc, cartItem -> acc + cartItem.quantity.times(cartItem.product.price!!.toDouble()) }
+                (itemView.context as ShoppingCartActivity).total_price.text = "AED ${totalPrice}"
             }
             itemView.removeItem2.setOnClickListener { view ->
                 ShoppingCart.removeItem(CartItem(cartItem.product), itemView.context)
-                itemView.product_quantity.text = cartItem.quantity.toString()
-                Toast.makeText(itemView.context, "quantity removed", Toast.LENGTH_SHORT).show()
+                var value = --cartItem.quantity
+                if(cartItem.quantity <= 0){
+                    itemView.visibility = View.GONE
+                }
+                else{
+                    Toast.makeText(itemView.context, "1 Quantity removed", Toast.LENGTH_SHORT).show()
+                    itemView.product_quantity.text = value.toString()
+
+                    var totalPrice = ShoppingCart.getCart()
+                        .fold(0.toDouble()) { acc, cartItem -> acc + cartItem.quantity.times(cartItem.product.price!!.toDouble()) }
+                    (itemView.context as ShoppingCartActivity).total_price.text = "AED ${totalPrice}"
+                }
             }
 
             itemView.product_name.text = cartItem.product.name
