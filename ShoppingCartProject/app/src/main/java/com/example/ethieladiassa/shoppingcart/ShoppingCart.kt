@@ -9,42 +9,29 @@ class ShoppingCart {
     companion object {
 
         fun addItem(cartItem: CartItem) {
-            val cart = ShoppingCart.getCart()
-
+            val cart = getCart()
             val targetItem = cart.singleOrNull { it.product.id == cartItem.product.id }
-
             if (targetItem == null) {
                 cartItem.quantity++
                 cart.add(cartItem)
             } else {
-
                 targetItem.quantity++
             }
-            ShoppingCart.saveCart(cart)
-
+            saveCart(cart)
         }
 
         fun removeItem(cartItem: CartItem, context: Context) {
-
-            val cart = ShoppingCart.getCart()
-
-
+            val cart = getCart()
             val targetItem = cart.singleOrNull { it.product.id == cartItem.product.id }
-
             if (targetItem != null) {
-
                 if (targetItem.quantity > 1) {
-
-                    Toast.makeText(context, "quantity removed", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, "Quantity Removed", Toast.LENGTH_SHORT).show()
                     targetItem.quantity--
                 } else {
                     cart.remove(targetItem)
                 }
-
             }
-
-            ShoppingCart.saveCart(cart)
-
+            saveCart(cart)
         }
 
         fun saveCart(cart: MutableList<CartItem>) {
