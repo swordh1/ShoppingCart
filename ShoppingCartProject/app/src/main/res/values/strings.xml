@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">shoppingCart</string>
+    <string name="total">Total</string>
+    <string name="checkout">Checkout</string>
 </resources>

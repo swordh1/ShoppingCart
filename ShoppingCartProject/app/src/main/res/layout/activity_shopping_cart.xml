@@ -1,47 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:background="#fffffdff"
         android:layout_height="match_parent"
-        tools:context=".ShoppingCartActivity">
+        android:background="#fffffdff"
+        tools:context=".activities.ShoppingCartActivity">
 
 
     <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
             android:background="@android:color/transparent"
             android:fitsSystemWindows="true"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize">
-
-        <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="@android:color/white"
-                app:title="Shopping Cart"
-                app:titleTextColor="#2196F3" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="16dp">
 
     </android.support.design.widget.AppBarLayout>
 
-
     <android.support.v7.widget.RecyclerView
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
             android:id="@+id/shopping_cart_recyclerView"
-            android:layout_margin="2dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:layout_margin="2dp" />
 
 
     <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="66dp"
-            android:layout_gravity="bottom"
+            android:layout_marginTop="316dp"
             android:background="#2196F3"
             android:elevation="15dp"
             android:padding="8dp"
-            app:elevation="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/shopping_cart_recyclerView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/appBarLayout"
+            app:layout_constraintVertical_bias="1.0"
             tools:targetApi="lollipop">
 
 
@@ -51,13 +48,14 @@
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="15dp"
-                tools:ignore="RtlCompat">
+                tools:ignore="RelativeOverlap,RtlCompat"
+                android:layout_marginStart="15dp">
 
             <TextView
                     android:id="@+id/totalLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Total"
+                    android:text="@string/total"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -84,12 +82,24 @@
                 android:layout_marginRight="15dp"
                 android:background="@drawable/round_background"
                 android:padding="10dp"
-                android:text="Checkout"
+                android:text="@string/checkout"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
-                android:textSize="19sp" />
+                android:textSize="19sp"
+                tools:ignore="RelativeOverlap" />
 
 
     </RelativeLayout>
 
-</android.support.design.widget.CoordinatorLayout>
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            app:title="Shopping Cart"
+            app:titleTextColor="#2196F3"
+            tools:layout_editor_absoluteX="-4dp"
+            tools:layout_editor_absoluteY="1dp"
+            tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/coordinator"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#fffffa"
-        android:layout_width="match_parent">
+        android:background="#fffffa">
 
 
     <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
             android:background="@android:color/transparent"
             android:fitsSystemWindows="true"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize">
+            app:layout_constraintTop_toTopOf="parent">
 
         <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -28,24 +29,25 @@
 
     <android.support.v4.widget.SwipeRefreshLayout
             android:id="@+id/swipeRefreshLayout"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
 
         <android.support.v7.widget.RecyclerView
                 android:id="@+id/products_recyclerview"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent" />
 
     </android.support.v4.widget.SwipeRefreshLayout>
 
 
     <RelativeLayout
             android:id="@+id/showCart"
-            android:layout_margin="16dp"
-            android:layout_gravity="bottom|end"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/appBarLayout2">
 
         <android.support.design.widget.FloatingActionButton
                 android:id="@+id/basketButton"
@@ -76,4 +78,4 @@
     </RelativeLayout>
 
 
-</android.support.design.widget.CoordinatorLayout>
+</android.support.constraint.ConstraintLayout>
