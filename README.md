@@ -1,5 +1,5 @@
 # ShoppingCart
-A simple android application written in Kotlin that does one thing, shopping.
+A simple android application written in Kotlin that does one thing, shopping cart list.
 
 # Installation:
 1) First, you need to type in the search bar "download android studio"
