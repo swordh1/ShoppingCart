@@ -91,7 +91,7 @@ class ProductAdapter(private var context: Context, private var products: List<Pr
                     quantity += cartItem.quantity
                 }
                 (itemView.context as MainActivity).cart_size.text = quantity.toString()
-                Toast.makeText(itemView.context, "Cart size $quantity", Toast.LENGTH_SHORT).show()
+//                Toast.makeText(itemView.context, "Cart size $quantity", Toast.LENGTH_SHORT).show()
             }
         }
     }

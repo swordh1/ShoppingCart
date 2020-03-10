@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Sets the main activity recycle item viewer as vertical with 3 itemviews
-        products_recyclerview.layoutManager = StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL)
+        products_recyclerview.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
 
         // updates the quantity of items in the cart button
         cart_size.text = ShoppingCart.getShoppingCartSize().toString()

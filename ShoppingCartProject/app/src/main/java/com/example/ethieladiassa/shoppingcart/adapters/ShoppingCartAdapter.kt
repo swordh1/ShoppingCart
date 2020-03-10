@@ -45,7 +45,6 @@ class ShoppingCartAdapter(private var context: Context, private var cartItems: L
                 ShoppingCart.addItem(CartItem(cartItem.product))
                 val value1 = ++cartItem.quantity
                 itemView.product_quantity.text = value1.toString()
-                Toast.makeText(itemView.context, "1 more Quantity added", Toast.LENGTH_SHORT).show()
                 val totalPrice = ShoppingCart.getCart()
                     .fold(0.toDouble()) { acc, cartItem -> acc + cartItem.quantity.times(cartItem.product.price!!.toDouble()) }
                 (itemView.context as ShoppingCartActivity).total_price.text = "AED $totalPrice"
@@ -54,11 +53,9 @@ class ShoppingCartAdapter(private var context: Context, private var cartItems: L
                 ShoppingCart.removeItem(CartItem(cartItem.product), itemView.context)
                 val value = --cartItem.quantity
                 if(cartItem.quantity <= 0){
-                    Toast.makeText(itemView.context, "1 Quantity removed", Toast.LENGTH_SHORT).show()
                     itemView.visibility = View.GONE
                 }
                 else{
-                    Toast.makeText(itemView.context, "1 Quantity removed", Toast.LENGTH_SHORT).show()
                     itemView.product_quantity.text = value.toString()
                 }
                 val totalPrice = ShoppingCart.getCart()

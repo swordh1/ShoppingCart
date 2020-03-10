@@ -25,7 +25,6 @@ class ShoppingCart {
             val targetItem = cart.singleOrNull { it.product.id == cartItem.product.id }
             if (targetItem != null) {
                 if (targetItem.quantity > 1) {
-                    Toast.makeText(context, "Quantity Removed", Toast.LENGTH_SHORT).show()
                     targetItem.quantity--
                 } else {
                     cart.remove(targetItem)
